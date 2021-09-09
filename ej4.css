@@ -1,0 +1,74 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+body{
+    padding:1%;
+    background-color:linen;
+    font-family:'Verdana';
+}
+#main{
+    display:flex;
+    flex-wrap: wrap;
+}
+#main section{
+    width:50%;
+    padding:2%;
+}
+#main section:first-child{
+    order:2;
+}
+#main section:nth-child(2){
+    order:3;
+}
+#main section:nth-child(3){
+    order:4;
+}
+#main section:nth-child(4){
+    order:5;
+}
+#main section:nth-child(5){
+    order:1;
+    flex-basis:100%;
+}
+#main section div{
+    height:300px;
+    margin-bottom:3%;
+}
+h1{
+    text-align:center;
+    margin:2% 0;
+    font-size:1.7rem;
+}
+h2{
+    margin:2% 0;
+}
+#divImagen1,#divImagen2,#divImagen3,#divImagen4{
+    background-size:100%;
+    background-position:top;
+    background-repeat:no-repeat;
+}
+#divImagen1{
+    background-image:url(img/kitana.jpg);
+}
+#divImagen2{
+    background-image:url(img/skarlet.jpg);
+}
+#divImagen3{
+    background-image: url(img/visas.jpg);
+}
+#divImagen4{
+    background-image:url(img/kitanaFatality.jpg);
+}
+#divImagen5{
+    background-image:url(img/commanderLin.jpg);
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+/*     background-attachment: fixed; *//*Para que al hacer scroll la imagen se quede fija sin moverse en el fondo*/
+}
+#divImagen1:hover,#divImagen2:hover,#divImagen3:hover,#divImagen4:hover,#divImagen5:hover{
+    transition:1s ease-out;
+    background-size:110%;
+    opacity:0.8;
+}
